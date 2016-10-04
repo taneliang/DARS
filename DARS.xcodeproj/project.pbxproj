@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		992A551C1552B48400222BAA /* DARSDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 992A551B1552B48400222BAA /* DARSDatabase.m */; };
+		992A551F1552E7C000222BAA /* vocabulary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 992A551E1552E7C000222BAA /* vocabulary.txt */; };
+		9969694C15392A7A00FCFECE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9969694B15392A7A00FCFECE /* Cocoa.framework */; };
+		9969695615392A7A00FCFECE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9969695415392A7A00FCFECE /* InfoPlist.strings */; };
+		9969695815392A7A00FCFECE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9969695715392A7A00FCFECE /* main.m */; };
+		9969695C15392A7A00FCFECE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9969695A15392A7A00FCFECE /* Credits.rtf */; };
+		9969695F15392A7A00FCFECE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9969695E15392A7A00FCFECE /* AppDelegate.m */; };
+		9969696215392A7A00FCFECE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9969696015392A7A00FCFECE /* MainMenu.xib */; };
+		9969696D15392CF000FCFECE /* DARS.m in Sources */ = {isa = PBXBuildFile; fileRef = 9969696C15392CF000FCFECE /* DARS.m */; };
+		9969697115396F7A00FCFECE /* chemistry.js in Resources */ = {isa = PBXBuildFile; fileRef = 9969697015396F7A00FCFECE /* chemistry.js */; };
+		996969791539E98200FCFECE /* default_lipup.js in Resources */ = {isa = PBXBuildFile; fileRef = 996969781539E98200FCFECE /* default_lipup.js */; };
+		9969697B1539EA0600FCFECE /* chemistry_db.js in Resources */ = {isa = PBXBuildFile; fileRef = 9969697A1539EA0600FCFECE /* chemistry_db.js */; };
+		9969697D1543A6D800FCFECE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9969697C1543A6D800FCFECE /* libsqlite3.dylib */; };
+		9969697E15467C9500FCFECE /* chemistry.db in Resources */ = {isa = PBXBuildFile; fileRef = 996969771539E95C00FCFECE /* chemistry.db */; };
+		9969D222154AD14C0068F1BB /* logic_dr.js in Resources */ = {isa = PBXBuildFile; fileRef = 9969D221154AD14C0068F1BB /* logic_dr.js */; };
+		99B900BC154E80CE00C97B11 /* vocabulary_db.js in Resources */ = {isa = PBXBuildFile; fileRef = 99B900BB154E80CE00C97B11 /* vocabulary_db.js */; };
+		99CFB054154BA73E00D01761 /* self_db.js in Resources */ = {isa = PBXBuildFile; fileRef = 99CFB053154BA73E00D01761 /* self_db.js */; };
+		99CFB056154D1C1100D01761 /* self.db in Resources */ = {isa = PBXBuildFile; fileRef = 99CFB051154BA72B00D01761 /* self.db */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		992A551A1552B48400222BAA /* DARSDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DARSDatabase.h; sourceTree = "<group>"; };
+		992A551B1552B48400222BAA /* DARSDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DARSDatabase.m; sourceTree = "<group>"; };
+		992A551E1552E7C000222BAA /* vocabulary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vocabulary.txt; sourceTree = "<group>"; };
+		9969694715392A7A00FCFECE /* DARS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DARS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9969694B15392A7A00FCFECE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9969694E15392A7A00FCFECE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9969694F15392A7A00FCFECE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9969695015392A7A00FCFECE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9969695315392A7A00FCFECE /* DARS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DARS-Info.plist"; sourceTree = "<group>"; };
+		9969695515392A7A00FCFECE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9969695715392A7A00FCFECE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9969695915392A7A00FCFECE /* DARS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DARS-Prefix.pch"; sourceTree = "<group>"; };
+		9969695B15392A7A00FCFECE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9969695D15392A7A00FCFECE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9969695E15392A7A00FCFECE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9969696115392A7A00FCFECE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9969696B15392CF000FCFECE /* DARS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DARS.h; sourceTree = "<group>"; };
+		9969696C15392CF000FCFECE /* DARS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DARS.m; sourceTree = "<group>"; };
+		9969697015396F7A00FCFECE /* chemistry.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = chemistry.js; sourceTree = "<group>"; };
+		996969771539E95C00FCFECE /* chemistry.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = chemistry.db; sourceTree = "<group>"; };
+		996969781539E98200FCFECE /* default_lipup.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = default_lipup.js; sourceTree = "<group>"; };
+		9969697A1539EA0600FCFECE /* chemistry_db.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = chemistry_db.js; sourceTree = "<group>"; };
+		9969697C1543A6D800FCFECE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		9969D221154AD14C0068F1BB /* logic_dr.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = logic_dr.js; sourceTree = "<group>"; };
+		99B900BB154E80CE00C97B11 /* vocabulary_db.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = vocabulary_db.js; sourceTree = "<group>"; };
+		99CFB051154BA72B00D01761 /* self.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = self.db; sourceTree = "<group>"; };
+		99CFB053154BA73E00D01761 /* self_db.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = self_db.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9969694415392A7A00FCFECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9969697D1543A6D800FCFECE /* libsqlite3.dylib in Frameworks */,
+				9969694C15392A7A00FCFECE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9969693C15392A7900FCFECE = {
+			isa = PBXGroup;
+			children = (
+				9969695115392A7A00FCFECE /* DARS */,
+				9969694A15392A7A00FCFECE /* Frameworks */,
+				9969694815392A7A00FCFECE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9969694815392A7A00FCFECE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9969694715392A7A00FCFECE /* DARS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9969694A15392A7A00FCFECE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9969697C1543A6D800FCFECE /* libsqlite3.dylib */,
+				9969694B15392A7A00FCFECE /* Cocoa.framework */,
+				9969694D15392A7A00FCFECE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9969694D15392A7A00FCFECE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9969694E15392A7A00FCFECE /* AppKit.framework */,
+				9969694F15392A7A00FCFECE /* CoreData.framework */,
+				9969695015392A7A00FCFECE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9969695115392A7A00FCFECE /* DARS */ = {
+			isa = PBXGroup;
+			children = (
+				9969695D15392A7A00FCFECE /* AppDelegate.h */,
+				9969695E15392A7A00FCFECE /* AppDelegate.m */,
+				9969696B15392CF000FCFECE /* DARS.h */,
+				9969696C15392CF000FCFECE /* DARS.m */,
+				992A551A1552B48400222BAA /* DARSDatabase.h */,
+				992A551B1552B48400222BAA /* DARSDatabase.m */,
+				9969696015392A7A00FCFECE /* MainMenu.xib */,
+				9969695215392A7A00FCFECE /* Supporting Files */,
+			);
+			name = DARS;
+			path = Chemistry;
+			sourceTree = "<group>";
+		};
+		9969695215392A7A00FCFECE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9969695315392A7A00FCFECE /* DARS-Info.plist */,
+				9969695415392A7A00FCFECE /* InfoPlist.strings */,
+				9969695715392A7A00FCFECE /* main.m */,
+				9969695915392A7A00FCFECE /* DARS-Prefix.pch */,
+				9969695A15392A7A00FCFECE /* Credits.rtf */,
+				9969697015396F7A00FCFECE /* chemistry.js */,
+				996969781539E98200FCFECE /* default_lipup.js */,
+				996969771539E95C00FCFECE /* chemistry.db */,
+				9969697A1539EA0600FCFECE /* chemistry_db.js */,
+				9969D221154AD14C0068F1BB /* logic_dr.js */,
+				99CFB051154BA72B00D01761 /* self.db */,
+				99CFB053154BA73E00D01761 /* self_db.js */,
+				99B900BB154E80CE00C97B11 /* vocabulary_db.js */,
+				992A551E1552E7C000222BAA /* vocabulary.txt */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9969694615392A7A00FCFECE /* DARS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9969696515392A7A00FCFECE /* Build configuration list for PBXNativeTarget "DARS" */;
+			buildPhases = (
+				9969694315392A7A00FCFECE /* Sources */,
+				9969694415392A7A00FCFECE /* Frameworks */,
+				9969694515392A7A00FCFECE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DARS;
+			productName = Chemistry;
+			productReference = 9969694715392A7A00FCFECE /* DARS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9969693E15392A7900FCFECE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = IntelligentMonkey;
+			};
+			buildConfigurationList = 9969694115392A7900FCFECE /* Build configuration list for PBXProject "DARS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9969693C15392A7900FCFECE;
+			productRefGroup = 9969694815392A7A00FCFECE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9969694615392A7A00FCFECE /* DARS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9969694515392A7A00FCFECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B900BC154E80CE00C97B11 /* vocabulary_db.js in Resources */,
+				99CFB056154D1C1100D01761 /* self.db in Resources */,
+				99CFB054154BA73E00D01761 /* self_db.js in Resources */,
+				9969D222154AD14C0068F1BB /* logic_dr.js in Resources */,
+				996969791539E98200FCFECE /* default_lipup.js in Resources */,
+				9969697B1539EA0600FCFECE /* chemistry_db.js in Resources */,
+				9969697E15467C9500FCFECE /* chemistry.db in Resources */,
+				9969695615392A7A00FCFECE /* InfoPlist.strings in Resources */,
+				9969695C15392A7A00FCFECE /* Credits.rtf in Resources */,
+				9969696215392A7A00FCFECE /* MainMenu.xib in Resources */,
+				9969697115396F7A00FCFECE /* chemistry.js in Resources */,
+				992A551F1552E7C000222BAA /* vocabulary.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9969694315392A7A00FCFECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9969695815392A7A00FCFECE /* main.m in Sources */,
+				9969695F15392A7A00FCFECE /* AppDelegate.m in Sources */,
+				9969696D15392CF000FCFECE /* DARS.m in Sources */,
+				992A551C1552B48400222BAA /* DARSDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9969695415392A7A00FCFECE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9969695515392A7A00FCFECE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9969695A15392A7A00FCFECE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9969695B15392A7A00FCFECE /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9969696015392A7A00FCFECE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9969696115392A7A00FCFECE /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9969696315392A7A00FCFECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9969696415392A7A00FCFECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9969696615392A7A00FCFECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chemistry/DARS-Prefix.pch";
+				INFOPLIST_FILE = "Chemistry/DARS-Info.plist";
+				PRODUCT_NAME = DARS;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9969696715392A7A00FCFECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chemistry/DARS-Prefix.pch";
+				INFOPLIST_FILE = "Chemistry/DARS-Info.plist";
+				PRODUCT_NAME = DARS;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9969694115392A7900FCFECE /* Build configuration list for PBXProject "DARS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9969696315392A7A00FCFECE /* Debug */,
+				9969696415392A7A00FCFECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9969696515392A7A00FCFECE /* Build configuration list for PBXNativeTarget "DARS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9969696615392A7A00FCFECE /* Debug */,
+				9969696715392A7A00FCFECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9969693E15392A7900FCFECE /* Project object */;
+}

@@ -1,0 +1,106 @@
+existence, being, reality: CONTAINS(dimension);
+dimension;
+dimension-0, point: INSTANCE(dimension);
+dimension-1, line: INSTANCE(dimension);
+dimension-2, plane: INSTANCE(dimension);
+dimension-3: INSTANCE(dimension);
+dimension-4, time, t: INSTANCE(dimension);
+
+character;
+letter: INSTANCE(character);
+number: INSTANCE(point), INSTANCE(character);
+integer, whole number: INSTANCE(number);
+0, zero: INSTANCE(integer), STOKEN(DARS.specialtoken.numeral.zero);
+1, one: INSTANCE(integer), STOKEN(DARS.specialtoken.numeral.one);
+2, two: INSTANCE(integer), STOKEN(DARS.specialtoken.numeral.two);
+3, three: INSTANCE(integer), STOKEN(DARS.specialtoken.numeral.three);
+4, four: INSTANCE(integer), STOKEN(DARS.specialtoken.numeral.four);
+5, five: INSTANCE(integer), STOKEN(DARS.specialtoken.numeral.five);
+6, six: INSTANCE(integer), STOKEN(DARS.specialtoken.numeral.six);
+7, seven: INSTANCE(integer), STOKEN(DARS.specialtoken.numeral.seven);
+8, eight: INSTANCE(integer), STOKEN(DARS.specialtoken.numeral.eight);
+9, nine: INSTANCE(integer), STOKEN(DARS.specialtoken.numeral.nine);
+(: INSTANCE(character), STOKEN(DARS.specialtoken.parentheses.left_brace);
+): INSTANCE(character), STOKEN(DARS.specialtoken.parentheses.right_brace);
+[: INSTANCE(character), STOKEN(DARS.specialtoken.parentheses.left_square_brace);
+]: INSTANCE(character), STOKEN(DARS.specialtoken.parentheses.right_square_brace);
+{: INSTANCE(character), STOKEN(DARS.specialtoken.parentheses.left_curly_brace);
+}: INSTANCE(character), STOKEN(DARS.specialtoken.parentheses.right_curly_brace);
+a: INSTANCE(character), STOKEN(DARS.specialtoken.letter.a);
+b: INSTANCE(character), STOKEN(DARS.specialtoken.letter.b);
+c: INSTANCE(character), STOKEN(DARS.specialtoken.letter.c);
+d: INSTANCE(character), STOKEN(DARS.specialtoken.letter.d);
+e: INSTANCE(character), STOKEN(DARS.specialtoken.letter.e);
+f: INSTANCE(character), STOKEN(DARS.specialtoken.letter.f);
+g: INSTANCE(character), STOKEN(DARS.specialtoken.letter.g);
+h: INSTANCE(character), STOKEN(DARS.specialtoken.letter.h);
+i: INSTANCE(character), STOKEN(DARS.specialtoken.letter.i);
+j: INSTANCE(character), STOKEN(DARS.specialtoken.letter.j);
+k: INSTANCE(character), STOKEN(DARS.specialtoken.letter.k);
+l: INSTANCE(character), STOKEN(DARS.specialtoken.letter.l);
+m: INSTANCE(character), STOKEN(DARS.specialtoken.letter.m);
+n: INSTANCE(character), STOKEN(DARS.specialtoken.letter.n);
+o: INSTANCE(character), STOKEN(DARS.specialtoken.letter.o);
+p: INSTANCE(character), STOKEN(DARS.specialtoken.letter.p);
+q: INSTANCE(character), STOKEN(DARS.specialtoken.letter.q);
+r: INSTANCE(character), STOKEN(DARS.specialtoken.letter.r);
+s: INSTANCE(character), STOKEN(DARS.specialtoken.letter.s);
+t: INSTANCE(character), STOKEN(DARS.specialtoken.letter.t);
+u: INSTANCE(character), STOKEN(DARS.specialtoken.letter.u);
+v: INSTANCE(character), STOKEN(DARS.specialtoken.letter.v);
+w: INSTANCE(character), STOKEN(DARS.specialtoken.letter.w);
+x: INSTANCE(character), STOKEN(DARS.specialtoken.letter.x);
+y: INSTANCE(character), STOKEN(DARS.specialtoken.letter.y);
+z: INSTANCE(character), STOKEN(DARS.specialtoken.letter.z);
+
+what: STOKEN(DARS.specialtoken.requesttype.what);
+who: STOKEN(DARS.specialtoken.requesttype.who);
+when: STOKEN(DARS.specialtoken.requesttype.when);
+where: STOKEN(DARS.specialtoken.requesttype.where);
+why: STOKEN(DARS.specialtoken.requesttype.why);
+how: STOKEN(DARS.specialtoken.requesttype.how);
+and: STOKEN(DARS.specialtoken.conjunction.and);
+
+mathematical operator;
+mathematics, math: CONTAINS(mathematical operator);
++, plus, add: INSTANCE(mathematical operator), STOKEN(DARS.specialtoken.math.operator.plus);
+-, minus, subtract: INSTANCE(mathematical operator), STOKEN(DARS.specialtoken.math.operator.minus);
+*, times, multiply: INSTANCE(mathematical operator), STOKEN(DARS.specialtoken.math.operator.times);
+/, divide: INSTANCE(mathematical operator), STOKEN(DARS.specialtoken.math.operator.divide);
+^, power, caret: INSTANCE(mathematical operator), STOKEN(DARS.specialtoken.math.operator.power);
+√, square root: INSTANCE(mathematical operator), STOKEN(DARS.specialtoken.math.operator.sqrt);
+=, equals: INSTANCE(mathematical operator), STOKEN(DARS.specialtoken.math.operator.equal);
+be, am, are, is, are, was, were, were, being, been: INSTANCE(equals);
+
+second, s: INSTANCE(time);
+minute, min: INSTANCE(60s);
+hour, hr, hrs, h: INSTANCE(60 min);
+day: INSTANCE(24h);
+month, months: INSTANCE(time);
+year: INSTANCE(12 months);
+now: INSTANCE(time), STOKEN(DARS.specialtoken.time.now);
+
+// Matter
+matter: INSTANCE(dimension-3);
+particle generation, generation: INSTANCE(integer);
+first generation: INSTANCE(particle generation);
+second generation: INSTANCE(particle generation);
+third generation: INSTANCE(particle generation);
+elementary particle: INSTANCE(matter), INSTANCE(point), CONTAINS(first generation), CONTAINS(second generation), CONTAINS(third generation);
+subatomic particle: INSTANCE(matter);
+fermion: INSTANCE(elementary particle);
+quark: INSTANCE(fermion);
+lepton: INSTANCE(fermion);
+
+electric charge, Q;
+coulomb, C: INSTANCE(electric charge);
+elementary charge, e: INSTANCE(1.60217656535×10^−19 C);
+up quark: INSTANCE(quark), PROPERTY(charge, 2/3 e);
+down quark: INSTANCE(quark), PROPERTY(charge, -1/3 e);
+electron: INSTANCE(subatomic particle), INSTANCE(fermion), PROPERTY(charge, -1 e);
+proton: INSTANCE(subatomic particle), CONTAINS(2 up quark and 1 down quark);
+neutron: INSTANCE(subatomic particle), CONTAINS(1 up quark and 2 down quark);
+element, atom: CONTAINS(proton and neutron and electron), PROPERTY(charge, 0);
+
+// Temp storage - these really shouldn't be hardcoded
+let, assume: STOKEN(DARS.specialtoken.temp.assume);
