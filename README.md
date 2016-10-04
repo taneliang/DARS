@@ -19,6 +19,7 @@ Adaptors are required to give DARS the natural language names of the tables and 
 
 1. Create JSON file for the adaptor, and create a dictionary.
 2. Use the code below as a template:
+
     ```JSON
     {
         "DARS_file_contents": "DARS.database.adaptor",
@@ -35,14 +36,14 @@ Adaptors are required to give DARS the natural language names of the tables and 
          [
           {
           "column_name": "<column name as it is in the db>",
-          "column_natural_language_name": "<column name as you would say it>":,
+          "column_natural_language_name": "<column name as you would say it>",
           "column_contents_singular": "<e.g. proton number>",
           "column_contents_plural": "<e.g. proton numbers>",
           },
-          ... more columns ...
+          // ... more columns ...
          ]
          },
-         ... more tables ...
+         // ... more tables ...
         ]
     }
     ```
